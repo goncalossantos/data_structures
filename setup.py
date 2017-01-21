@@ -20,7 +20,7 @@ setup(
     license="BSD",
     keywords="python data structures list queue binary search tree graph",
     url="https://github.com/goncalossantos/data_strutures",
-    packages=['trees'],
+    packages=['data_structures'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
