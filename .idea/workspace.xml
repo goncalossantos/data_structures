@@ -21,8 +21,8 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="288">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -588,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485035683440</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add pacakges on setup.py">
+      <created>1485035748794</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1485035748794</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -635,7 +642,8 @@
     <MESSAGE value="stupid" />
     <MESSAGE value="fix successor and max and min to be static methods" />
     <MESSAGE value="Move graphs from Algorithms repo and restructure. Passes all the tests, much nicer like this" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move graphs from Algorithms repo and restructure. Passes all the tests, much nicer like this" />
+    <MESSAGE value="add pacakges on setup.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pacakges on setup.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -807,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="288">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
