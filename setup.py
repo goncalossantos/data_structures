@@ -1,7 +1,7 @@
 import os
 
 from setuptools import setup
-PACKAGE_NAME = 'data_structures'
+
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -12,7 +12,7 @@ def read(fname):
 
 
 setup(
-    name="py_data_structures",
+    name="data_structures",
     version="1.0.1",
     author="Goncalo Silva Santos",
     author_email="goncalopvssantos@gmail.com",
@@ -20,9 +20,7 @@ setup(
     license="BSD",
     keywords="python data structures list queue binary search tree graph",
     url="https://github.com/goncalossantos/data_strutures",
-    packages=[PACKAGE_NAME, ],
-    package_data={PACKAGE_NAME: [PACKAGE_NAME + '/*']},
-    include_package_data=True,
+    packages=['data_structures, data_structures.trees'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
