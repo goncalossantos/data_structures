@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name="data_structures",
-    version="0.0.1",
+    version="1.0.1",
     author="Goncalo Silva Santos",
     author_email="goncalopvssantos@gmail.com",
     description=("A variaty of multipurpose data structures implemented in python"),

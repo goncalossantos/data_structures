@@ -30,13 +30,20 @@ class BinaryNode(Sequence):
 
     def _search(self, count, index) -> Tuple["BinaryNode", int]:
         found = None
-        if count == index:
-            return self, count
+        # Check left
         if self.left:
-            (found, count) = self.left._search(count + 1, index)
-        if not found and (not index or count < index) and self.right:
-            (found, count) = self.right._search(count + 1, index)
-        return found, count + 1
+            (found, count) = self.left._search(count, index)
+
+        # Check current Node
+        if count == index:
+            count += 1
+            return self, count
+        count += 1
+
+        # Check right
+        if not found and self.right is not None:
+            (found, count) = self.right._search(count, index)
+        return found, count
 
     def __getitem__(self, item):
         found, _ = self._search(0, item)
