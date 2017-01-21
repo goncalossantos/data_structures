@@ -1,6 +1,6 @@
 import os
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 # Utility function to read the README file.
@@ -20,12 +20,7 @@ setup(
     license="BSD",
     keywords="python data structures list queue binary search tree graph",
     url="https://github.com/goncalossantos/data_strutures",
-    packages=[
-        'data_structures',
-        'data_structures.trees',
-        'data_structures.graphs',
-        'data_structures.queues',
-    ],
+    packages=find_packages()
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
