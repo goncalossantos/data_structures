@@ -1,5 +1,5 @@
 from typing import Any
-from chapter_2.linked_list import Node
+from data_structures.linked_lists.linked_list import Node
 
 
 class PopEmpty(Exception):
