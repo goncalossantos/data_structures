@@ -69,16 +69,14 @@ class BinarySearchTree(Sequence):
     def __getitem__(self, item):
         return self.root[item]
 
-    def tree_minimum(self, bin_node: BinaryNode = None) -> BinaryNode:
-        if not bin_node:
-            bin_node = self.root  # type: BinaryNode
+    @staticmethod
+    def tree_minimum(bin_node: BinaryNode = None) -> BinaryNode:
         while bin_node.left is not None:
             bin_node = bin_node.left
         return bin_node
 
-    def tree_maximum(self, bin_node: BinaryNode = None) -> BinaryNode:
-        if not bin_node:
-            bin_node = self.root  # type: BinaryNode
+    @staticmethod
+    def tree_maximum(bin_node: BinaryNode = None) -> BinaryNode:
         while bin_node.right is not None:
             bin_node = bin_node.right
         return bin_node
@@ -105,9 +103,10 @@ class BinarySearchTree(Sequence):
 
         recurse(self.root)
 
-    def tree_successor(self, bin_node: BinaryNode):
+    @staticmethod
+    def tree_successor(bin_node: BinaryNode):
         if bin_node.right is not None:
-            return self.tree_minimum(bin_node)
+            return BinarySearchTree.tree_minimum(bin_node.right)
         parent = bin_node.parent
         while parent and bin_node == parent.right:
             bin_node = parent
@@ -116,7 +115,7 @@ class BinarySearchTree(Sequence):
 
     def tree_predecessor(self, bin_node: BinaryNode):
         if bin_node.left is not None:
-            return self.tree_maximum(bin_node)
+            return self.tree_maximum(bin_node.left)
         parent = bin_node.parent
         while parent and bin_node == parent.left:
             bin_node = parent
