@@ -12,7 +12,7 @@ def read(fname):
 
 
 setup(
-    name="data_structures",
+    name="py_data_structures",
     version="1.0.1",
     author="Goncalo Silva Santos",
     author_email="goncalopvssantos@gmail.com",
